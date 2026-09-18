@@ -116,6 +116,12 @@ const LODGE_EVENTS = [
     title: 'Ordeal Ceremony Training',
     location: 'Location TBD',
     description: 'Section-wide ceremony training with new procedures, August 28–29.'
+  },
+  {
+    date: '2027-07-26',
+    title: 'NOAC',
+    location: 'University of Illinois, Urbana-Champaign',
+    description: 'Scouting America’s second-largest national event, July 26–31. This year’s theme is "Our Time" — training sessions, evening arena shows, sports and ceremony competitions, plus new interactive zones like The Grid (maker labs, VR, and 3D printing). Participants stay in air-conditioned college residence halls.'
   }
 ];
 
@@ -135,7 +141,7 @@ const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct'
 
 function formatShortDate(dateStr) {
   const parts = dateStr.split('-').map(Number);
-  return MONTH_NAMES[parts[1] - 1] + ' ' + parts[2];
+  return MONTH_NAMES[parts[1] - 1] + ' ' + parts[2] + ', ' + parts[0];
 }
 
 function formatLongDate(dateStr) {
