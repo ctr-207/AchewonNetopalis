@@ -33,7 +33,38 @@
      description: 'New member induction and cheerful service.'
    }
 */
-const LODGE_EVENTS = [];
+const LODGE_EVENTS = [
+  {
+    date: '2026-09-20',
+    title: 'COC',
+    location: 'Doucette Scout Leadership Center, 544 Broadway, Massapequa, NY 11758',
+    description: 'Sunday, September 20, 11am–2pm, at Scouting America Long Island Council headquarters.'
+  },
+  {
+    date: '2026-10-17',
+    title: 'Camporee',
+    location: 'Camp Seton',
+    description: 'A day of camporee activities and OA involvement at Camp Seton.'
+  },
+  {
+    date: '2026-10-24',
+    title: 'OA Campout',
+    location: 'Pound Ridge Alpine Scout Camp, 441 US-9W, Alpine, NJ 07620',
+    description: 'A lodge campout weekend, October 24–25.'
+  },
+  {
+    date: '2026-12-04',
+    title: 'SWFT',
+    location: 'Section E18',
+    description: 'Section Winter Fellowship & Training, December 4–6. A winter weekend with the rest of Section E18 — games, bonding, and short workshops on OA roles and Conclave planning.'
+  },
+  {
+    date: '2027-01-30',
+    title: 'Klondike Derby',
+    location: 'Camp Seton',
+    description: 'Klondike Derby at Seton with an overnight stay, January 30–31.'
+  }
+];
 
 /* Link to the lodge's public Google Calendar. Once you've made the
    calendar public and copied its link, paste it in between the quotes
