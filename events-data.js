@@ -14,6 +14,11 @@
      location     where it's happening, in quotes
      description  a sentence or two about it, in quotes (shown when someone
                   clicks the event)
+     link         OPTIONAL. A URL for a button on the event's popup (sign-up
+                  form, registration page, study guide, etc). Leave this out
+                  entirely if the event doesn't need one.
+     linkLabel    OPTIONAL, only used alongside link. The button's text.
+                  Leave it out and the button just says "Register".
 
    You do NOT need to remove old events. Any event whose date has already
    passed automatically disappears from the site the next day.
@@ -71,6 +76,46 @@ const LODGE_EVENTS = [
     title: 'Klondike Derby',
     location: 'Camp Seton',
     description: 'Klondike Derby at Seton with an overnight stay, January 30–31, including a campfire run by OA.'
+  },
+  {
+    date: '2027-03-01',
+    title: 'Unit Elections',
+    location: 'Council-wide, March–April',
+    description: 'Every troop and crew in the council holds its election this spring. Eligible youth and adults must be active with at least 15 nights of camping in the last two years.',
+    link: 'https://oa-bsa.org/about/membership',
+    linkLabel: 'Eligibility Requirements'
+  },
+  {
+    date: '2027-04-19',
+    title: 'COC',
+    location: 'Baiting Hollow Scout Camp (Long Island)',
+    description: 'Council of Chiefs, April 19.'
+  },
+  {
+    date: '2027-05-15',
+    title: 'Ordeal Weekend',
+    location: 'Camp Seton',
+    description: 'New members complete their Ordeal, May 15–16, the first step of membership.'
+  },
+  {
+    date: '2027-05-16',
+    title: 'Brotherhood Ceremony',
+    location: 'Camp Seton',
+    description: 'Eligible Ordeal members become Brotherhood members, May 16.',
+    link: 'https://santee116.com/wp-content/uploads/2021/10/Brotherhood-Study-Guide-2021.pdf',
+    linkLabel: 'Study Guide'
+  },
+  {
+    date: '2027-06-12',
+    title: 'Section Conclave',
+    location: 'Baiting Hollow Scout Camp (Long Island, ~2 hour drive)',
+    description: 'June 12–14. Over 200 Arrowmen from Section E18 gather for leadership training, campfire shows, fellowship, competition, and patch auctions, plus elections for the section’s next youth officers. Let’s go for huge attendance this year and defend the Conclave Cup we won last year!'
+  },
+  {
+    date: '2027-08-28',
+    title: 'Ordeal Ceremony Training',
+    location: 'Location TBD',
+    description: 'Section-wide ceremony training with new procedures, August 28–29.'
   }
 ];
 
@@ -158,7 +203,7 @@ function renderEventTiles(containerId, count) {
       '<h3 class="font-bold" style="color:var(--forest);">' + e.title + '</h3>' +
       '<p class="text-sm mt-1" style="color:#7d765c;">' + e.location + '</p>';
     tile.addEventListener('click', function () {
-      openEventModal(e.title, formatLongDate(e.date), e.location, e.description, e.link);
+      openEventModal(e.title, formatLongDate(e.date), e.location, e.description, e.link, e.linkLabel);
     });
     tile.addEventListener('keydown', function (evt) {
       if (evt.key === 'Enter' || evt.key === ' ') { evt.preventDefault(); tile.click(); }
@@ -168,7 +213,7 @@ function renderEventTiles(containerId, count) {
 }
 
 /* Shared popup logic, used by every page that shows event tiles. */
-function openEventModal(title, date, location, desc, link) {
+function openEventModal(title, date, location, desc, link, linkLabel) {
   document.getElementById('modal-title').textContent = title;
   document.getElementById('modal-date').textContent = date;
   document.getElementById('modal-location').textContent = location;
@@ -177,6 +222,7 @@ function openEventModal(title, date, location, desc, link) {
   if (linkEl) {
     if (link) {
       linkEl.href = link;
+      linkEl.textContent = linkLabel || 'Register';
       linkEl.hidden = false;
     } else {
       linkEl.hidden = true;
