@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Officers | Achewon Netopalis</title>
+<link rel="icon" type="image/png" href="../assets/logo.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#ffffff;
+  --bone:#f6f4ec;
+  --forest:#16301f;
+  --forest-soft:#3c5a44;
+  --red:#c8102e;
+  --red-dark:#9c0c23;
+  --ink:#242318;
+  --line:#e7e2d3;
+}
+html,body{ width:100%; max-width:100%; overflow-x:hidden; margin:0; }
+body{ font-family:'Inter',sans-serif; color:var(--ink); background:var(--white); }
+.headline{ font-family:'Inter',sans-serif; font-weight:900; letter-spacing:-0.01em; }
+.fluid{ width:100%; max-width:1220px; margin-inline:auto; padding-inline:clamp(1.25rem,4vw,3rem); }
+.kicker{ font-size:0.78rem; font-weight:600; letter-spacing:0.03em; }
+.btn-fill{
+  display:inline-flex; align-items:center; justify-content:center;
+  border-radius:999px; padding:0.9rem 2rem; font-weight:600; font-size:0.92rem;
+  border:2px solid var(--red); background:var(--red); color:#fff;
+  transition:background-color .25s ease, border-color .25s ease; white-space:nowrap;
+}
+.btn-fill:hover{ background:var(--red-dark); border-color:var(--red-dark); }
+.nav-link{ position:relative; padding-bottom:3px; font-weight:500; font-size:0.92rem; }
+.nav-link::after{ content:''; position:absolute; left:0; bottom:0; height:2px; width:0; background:var(--red); transition:width .25s ease; }
+.nav-link:hover::after, .nav-link.active::after{ width:100%; }
+#mobile-menu{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
+#mobile-menu.open{ max-height:420px; }
+.officer-card{ border:1px solid var(--line); border-radius:0.15rem; padding:1.5rem; }
+</style>
+</head>
+<body class="w-full" data-page="officers">
+
+<header class="fixed top-0 left-0 right-0 z-50" style="background:rgba(255,255,255,0.94); backdrop-filter:blur(6px); border-bottom:2px solid var(--forest);">
+  <div class="fluid flex items-center justify-between py-3">
+    <a href="../" class="flex items-center gap-3 shrink-0">
+      <img src="../assets/logo.png" alt="Achewon Netopalis emblem" class="shrink-0" style="height:42px; width:auto; object-fit:contain;">
+      <span class="font-bold text-lg leading-tight" style="color:var(--forest);">Achewon Netopalis</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7" style="color:var(--forest);">
+      <a href="../" class="nav-link">Home</a>
+      <a href="../events/" class="nav-link">Events</a>
+      <a href="../elections/" class="nav-link">Elections</a>
+      <a href="../officers/" class="nav-link active">Officers</a>
+      <a href="https://www.greenwichscouting.org/" target="_blank" rel="noopener" class="nav-link">Council</a>
+    </nav>
+    <a href="https://oa-scouting.org/about" target="_blank" rel="noopener" class="hidden md:inline-flex btn-fill !py-2 !px-5 !text-sm">About</a>
+    <button id="menu-btn" class="md:hidden" style="color:var(--forest);" aria-label="Toggle menu">
+      <svg id="icon-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg id="icon-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden">
+    <div class="fluid flex flex-col gap-1 pb-5 text-sm" style="color:var(--forest);">
+      <a href="../" class="nav-link py-2 border-b" style="border-color:var(--line);">Home</a>
+      <a href="../events/" class="nav-link py-2 border-b" style="border-color:var(--line);">Events</a>
+      <a href="../elections/" class="nav-link py-2 border-b" style="border-color:var(--line);">Elections</a>
+      <a href="../officers/" class="nav-link py-2 border-b" style="border-color:var(--line);">Officers</a>
+      <a href="https://www.greenwichscouting.org/" target="_blank" rel="noopener" class="nav-link py-2">Greenwich Council</a>
+    </div>
+  </div>
+</header>
+
+<section class="w-full pt-32 pb-14" style="background:var(--bone); border-bottom:1px solid var(--line);">
+  <div class="fluid">
+    <p class="kicker mb-3" style="color:var(--red);">Lodge Leadership</p>
+    <h1 class="headline" style="font-size:clamp(2.1rem,4.4vw,3.2rem); color:var(--forest);">Officers &amp; Advisors</h1>
+  </div>
+</section>
+
+<section class="w-full py-16 sm:py-20">
+  <div class="fluid">
+    <p class="leading-relaxed mb-10 max-w-2xl" style="color:#544f3d;">Achewon Netopalis is led by youth officers elected each year by the lodge membership, supported by adult advisors appointed by the council.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="officer-card">
+        <p class="kicker mb-1" style="color:var(--red);">Lodge Chief</p>
+        <p class="font-semibold" style="color:var(--forest);">Colin Reynolds</p>
+      </div>
+      <div class="officer-card">
+        <p class="kicker mb-1" style="color:var(--red);">Vice Chief of Operations</p>
+        <p class="font-semibold" style="color:var(--forest);">Christopher DiPreta</p>
+      </div>
+      <div class="officer-card">
+        <p class="kicker mb-1" style="color:var(--red);">Vice Chief of Ceremonies</p>
+        <p class="font-semibold" style="color:var(--forest);">Vanya Kapur</p>
+      </div>
+      <div class="officer-card">
+        <p class="kicker mb-1" style="color:var(--red);">Vice Chief of Elections</p>
+        <p class="font-semibold" style="color:var(--forest);">Preston Johnson</p>
+      </div>
+      <div class="officer-card">
+        <p class="kicker mb-1" style="color:var(--red);">Vice Chief of Administration</p>
+        <p class="font-semibold" style="color:var(--forest);">Timo Van Hoecke</p>
+      </div>
+      <div class="officer-card">
+        <p class="kicker mb-1" style="color:var(--red);">Lodge Advisor</p>
+        <p class="font-semibold" style="color:var(--forest);">Michael Wellington</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="w-full pt-16 pb-10" style="background:var(--bone); border-top:2px solid var(--forest);">
+  <div class="fluid grid sm:grid-cols-2 gap-10 text-sm mb-12" style="color:#544f3d;">
+    <div>
+      <p class="kicker mb-2" style="color:var(--forest);">Address</p>
+      <p>Camp Seton<br>363 Riversville Road, Greenwich, CT 06831</p>
+    </div>
+    <div>
+      <p class="kicker mb-2" style="color:var(--forest);">Contact</p>
+      <p>anetopalislodge@gmail.com</p>
+    </div>
+  </div>
+  <div class="fluid flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t" style="border-color:var(--line);">
+    <p class="text-xs" style="color:#a89d7c;">&copy; 2026 Achewon Netopalis, Order of the Arrow. WWW.</p>
+    <div class="flex items-center gap-5">
+      <a href="javascript:void(0)" aria-label="Instagram" style="color:var(--forest-soft);" onmouseover="this.style.color='#c8102e'" onmouseout="this.style.color='#3c5a44'">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 3.3.15 4.8 1.7 4.9 4.9.07 1.3.07 1.6.07 4.8s0 3.6-.07 4.8c-.15 3.2-1.7 4.8-4.9 4.9-1.3.07-1.6.07-4.9.07s-3.6 0-4.9-.07c-3.2-.15-4.8-1.7-4.9-4.9C2 15.6 2 15.3 2 12s0-3.6.07-4.9c.15-3.2 1.7-4.8 4.9-4.9C8.4 2.2 8.7 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.07-2.3.1-3.5 1.3-3.6 3.6C3.6 8.7 3.6 9 3.6 12s0 3.3.07 4.4c.1 2.3 1.3 3.5 3.6 3.6 1.2.07 1.6.07 4.7.07s3.5 0 4.7-.07c2.3-.1 3.5-1.3 3.6-3.6.07-1.1.07-1.4.07-4.4s0-3.3-.07-4.4c-.1-2.3-1.3-3.5-3.6-3.6-1.2-.07-1.6-.07-4.7-.07zm0 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 1.8a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4zm5.7-1.9a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z"/></svg>
+      </a>
+      <a href="javascript:void(0)" aria-label="Facebook" style="color:var(--forest-soft);" onmouseover="this.style.color='#c8102e'" onmouseout="this.style.color='#3c5a44'">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.6h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46h1.6V4.34C15.9 4.24 15 4.18 13.9 4.18c-2.4 0-4 1.44-4 4.1v2.3H7.3v3h2.6V21h3.6z"/></svg>
+      </a>
+      <a href="javascript:void(0)" aria-label="Flickr" style="color:var(--forest-soft);" onmouseover="this.style.color='#c8102e'" onmouseout="this.style.color='#3c5a44'">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.5" cy="12" r="3.5"/><circle cx="17.5" cy="12" r="3.5"/></svg>
+      </a>
+      <span style="width:1px; height:16px; background:var(--line);"></span>
+      <a href="https://oa-scouting.org/about" target="_blank" rel="noopener" class="font-semibold" style="color:var(--forest-soft); font-size:0.85rem;" onmouseover="this.style.color='#c8102e'" onmouseout="this.style.color='#3c5a44'">About the OA</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
