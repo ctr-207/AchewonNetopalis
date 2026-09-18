@@ -50,7 +50,8 @@ const LODGE_EVENTS = [
     date: '2026-10-24',
     title: 'OA Campout',
     location: 'Pound Ridge Alpine Scout Camp, 441 US-9W, Alpine, NJ 07620',
-    description: 'A lodge campout weekend, October 24–25.'
+    description: 'A lodge campout weekend, October 24–25.',
+    link: 'https://www.signupgenius.com/go/20F0D4AAAAF28A5FDC34-65981369-oapound#/'
   },
   {
     date: '2026-12-04',
@@ -59,10 +60,10 @@ const LODGE_EVENTS = [
     description: 'Section Winter Fellowship & Training, December 4–6. A winter weekend with the rest of Section E18, with games, bonding, and short workshops on OA roles and Conclave planning.'
   },
   {
-    date: '2026-12-04',
+    date: '2026-11-13',
     title: 'NLS/DYLC',
     location: 'Alpine Scout Camp, 441 US-9W, Alpine, NJ 07620',
-    description: 'Leadership training held the same weekend as SWFT. NLS builds leadership skills for youth and adult OA members; DYLC helps advisers support youth leadership in the lodge.',
+    description: 'Leadership training, November 13–15. NLS builds leadership skills for youth and adult OA members; DYLC helps advisers support youth leadership in the lodge.',
     link: 'https://registration.oa-scouting.org/Event/1303'
   },
   {
