@@ -81,7 +81,7 @@ const LODGE_EVENTS = [
     date: '2027-03-01',
     title: 'Unit Elections',
     location: 'Council-wide, March–April',
-    description: 'Held at unit meetings across the council, March through April.',
+    description: 'Every troop and crew in the council holds its election this spring. Eligible youth and adults must be active with at least 15 nights of camping in the last two years.',
     link: 'https://oa-bsa.org/about/membership',
     linkLabel: 'Eligibility Requirements'
   },
@@ -95,13 +95,13 @@ const LODGE_EVENTS = [
     date: '2027-05-15',
     title: 'Ordeal Weekend',
     location: 'Camp Seton',
-    description: 'May 15–16.'
+    description: 'New members complete their Ordeal, May 15–16, the first step of membership.'
   },
   {
     date: '2027-05-16',
     title: 'Brotherhood Ceremony',
     location: 'Camp Seton',
-    description: 'May 16.',
+    description: 'Eligible Ordeal members become Brotherhood members, May 16.',
     link: 'https://santee116.com/wp-content/uploads/2021/10/Brotherhood-Study-Guide-2021.pdf',
     linkLabel: 'Study Guide'
   },
@@ -109,13 +109,13 @@ const LODGE_EVENTS = [
     date: '2027-06-12',
     title: 'Section Conclave',
     location: 'Baiting Hollow Scout Camp (Long Island, ~2 hour drive)',
-    description: 'June 12–14.'
+    description: 'June 12–14. Over 200 Arrowmen from Section E18 gather for leadership training, campfire shows, fellowship, competition, and patch auctions, plus elections for the section’s next youth officers. Let’s go for huge attendance this year and defend the Conclave Cup we won last year!'
   },
   {
     date: '2027-08-28',
     title: 'Ordeal Ceremony Training',
     location: 'Location TBD',
-    description: 'August 28–29.'
+    description: 'Section-wide ceremony training with new procedures, August 28–29.'
   }
 ];
 
