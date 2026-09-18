@@ -55,8 +55,15 @@ const LODGE_EVENTS = [
   {
     date: '2026-12-04',
     title: 'SWFT',
-    location: 'Section E18',
+    location: 'Alpine Scout Camp, 441 US-9W, Alpine, NJ 07620',
     description: 'Section Winter Fellowship & Training, December 4–6. A winter weekend with the rest of Section E18, with games, bonding, and short workshops on OA roles and Conclave planning.'
+  },
+  {
+    date: '2026-12-04',
+    title: 'NLS/DYLC',
+    location: 'Alpine Scout Camp, 441 US-9W, Alpine, NJ 07620',
+    description: 'Leadership training held the same weekend as SWFT. NLS builds leadership skills for youth and adult OA members; DYLC helps advisers support youth leadership in the lodge.',
+    link: 'https://registration.oa-scouting.org/Event/1303'
   },
   {
     date: '2027-01-30',
@@ -150,7 +157,7 @@ function renderEventTiles(containerId, count) {
       '<h3 class="font-bold" style="color:var(--forest);">' + e.title + '</h3>' +
       '<p class="text-sm mt-1" style="color:#7d765c;">' + e.location + '</p>';
     tile.addEventListener('click', function () {
-      openEventModal(e.title, formatLongDate(e.date), e.location, e.description);
+      openEventModal(e.title, formatLongDate(e.date), e.location, e.description, e.link);
     });
     tile.addEventListener('keydown', function (evt) {
       if (evt.key === 'Enter' || evt.key === ' ') { evt.preventDefault(); tile.click(); }
@@ -160,11 +167,20 @@ function renderEventTiles(containerId, count) {
 }
 
 /* Shared popup logic, used by every page that shows event tiles. */
-function openEventModal(title, date, location, desc) {
+function openEventModal(title, date, location, desc, link) {
   document.getElementById('modal-title').textContent = title;
   document.getElementById('modal-date').textContent = date;
   document.getElementById('modal-location').textContent = location;
   document.getElementById('modal-desc').textContent = desc;
+  const linkEl = document.getElementById('modal-link');
+  if (linkEl) {
+    if (link) {
+      linkEl.href = link;
+      linkEl.hidden = false;
+    } else {
+      linkEl.hidden = true;
+    }
+  }
   document.getElementById('event-modal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
