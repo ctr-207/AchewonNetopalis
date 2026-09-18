@@ -44,7 +44,7 @@ const LODGE_EVENTS = [
     date: '2026-10-17',
     title: 'Camporee',
     location: 'Camp Seton',
-    description: 'A day of camporee activities and OA involvement at Camp Seton.'
+    description: 'A day of camporee activities at Camp Seton, including a campfire run by OA.'
   },
   {
     date: '2026-10-24',
@@ -56,20 +56,20 @@ const LODGE_EVENTS = [
     date: '2026-12-04',
     title: 'SWFT',
     location: 'Section E18',
-    description: 'Section Winter Fellowship & Training, December 4–6. A winter weekend with the rest of Section E18 — games, bonding, and short workshops on OA roles and Conclave planning.'
+    description: 'Section Winter Fellowship & Training, December 4–6. A winter weekend with the rest of Section E18, with games, bonding, and short workshops on OA roles and Conclave planning.'
   },
   {
     date: '2027-01-30',
     title: 'Klondike Derby',
     location: 'Camp Seton',
-    description: 'Klondike Derby at Seton with an overnight stay, January 30–31.'
+    description: 'Klondike Derby at Seton with an overnight stay, January 30–31, including a campfire run by OA.'
   }
 ];
 
 /* Link to the lodge's public Google Calendar. Once you've made the
    calendar public and copied its link, paste it in between the quotes
    below, replacing the #. */
-const GOOGLE_CALENDAR_URL = '#';
+const GOOGLE_CALENDAR_URL = 'https://calendar.google.com/calendar/u/0?cid=YW5ldG9wYWxpc2xvZGdlQGdtYWlsLmNvbQ';
 
 
 /* ============================================================================
