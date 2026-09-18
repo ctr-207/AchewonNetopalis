@@ -65,10 +65,57 @@ const LODGE_EVENTS = [
     description: 'Section Winter Fellowship & Training, December 4–6. A winter weekend with the rest of Section E18, with games, bonding, and short workshops on OA roles and Conclave planning.'
   },
   {
+    date: '2026-11-13',
+    title: 'NLS/DYLC',
+    location: 'Alpine Scout Camp, 441 US-9W, Alpine, NJ 07620',
+    description: 'Leadership training, November 13–15. NLS builds leadership skills for youth and adult OA members; DYLC helps advisers support youth leadership in the lodge.',
+    link: 'https://registration.oa-scouting.org/Event/1303'
+  },
+  {
     date: '2027-01-30',
     title: 'Klondike Derby',
     location: 'Camp Seton',
     description: 'Klondike Derby at Seton with an overnight stay, January 30–31, including a campfire run by OA.'
+  },
+  {
+    date: '2027-03-01',
+    title: 'Unit Elections',
+    location: 'Council-wide, March–April',
+    description: 'Every troop and crew in the council holds its election this spring. Eligible youth and adults must be active with at least 15 nights of camping in the last two years.',
+    link: 'https://oa-bsa.org/about/membership',
+    linkLabel: 'Eligibility Requirements'
+  },
+  {
+    date: '2027-04-19',
+    title: 'COC',
+    location: 'Baiting Hollow Scout Camp (Long Island)',
+    description: 'Council of Chiefs, April 19.'
+  },
+  {
+    date: '2027-05-15',
+    title: 'Ordeal Weekend',
+    location: 'Camp Seton',
+    description: 'New members complete their Ordeal, May 15–16, the first step of membership.'
+  },
+  {
+    date: '2027-05-16',
+    title: 'Brotherhood Ceremony',
+    location: 'Camp Seton',
+    description: 'Eligible Ordeal members become Brotherhood members, May 16.',
+    link: 'https://santee116.com/wp-content/uploads/2021/10/Brotherhood-Study-Guide-2021.pdf',
+    linkLabel: 'Study Guide'
+  },
+  {
+    date: '2027-06-12',
+    title: 'Section Conclave',
+    location: 'Baiting Hollow Scout Camp (Long Island, ~2 hour drive)',
+    description: 'June 12–14. Over 200 Arrowmen from Section E18 gather for leadership training, campfire shows, fellowship, competition, and patch auctions, plus elections for the section’s next youth officers. Let’s go for huge attendance this year and defend the Conclave Cup we won last year!'
+  },
+  {
+    date: '2027-08-28',
+    title: 'Ordeal Ceremony Training',
+    location: 'Location TBD',
+    description: 'Section-wide ceremony training with new procedures, August 28–29.'
   }
 ];
 
