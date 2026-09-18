@@ -44,9 +44,17 @@ function initHeroPhotos(containerId, secondsPerPhoto) {
   }
 
   const slides = HERO_IMAGES.map(function (filename, i) {
-    const slide = document.createElement('div');
+    const slide = document.createElement('img');
     slide.className = 'hero-slide';
-    slide.style.backgroundImage = "url('assets/Hero/" + filename + "')";
+    slide.src = 'assets/Hero/' + filename;
+    slide.alt = '';
+    slide.decoding = 'async';
+    if (i === 0) {
+      slide.fetchPriority = 'high';
+      slide.loading = 'eager';
+    } else {
+      slide.loading = 'lazy';
+    }
     slide.style.opacity = i === 0 ? '1' : '0';
     container.insertBefore(slide, container.firstChild);
     return slide;

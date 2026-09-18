@@ -4,72 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Events | Achewon Netopalis</title>
+<meta name="description" content="Upcoming events for Achewon Netopalis, the Order of the Arrow lodge of Greenwich Council, plus Section E18's SWFT and Conclave.">
 <link rel="icon" type="image/png" href="../assets/logo.png">
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{
-  --white:#ffffff;
-  --bone:#f6f4ec;
-  --forest:#16301f;
-  --forest-soft:#3c5a44;
-  --red:#c8102e;
-  --red-dark:#9c0c23;
-  --ink:#242318;
-  --line:#e7e2d3;
-}
-html,body{ width:100%; max-width:100%; overflow-x:hidden; margin:0; }
-body{ font-family:'Inter',sans-serif; color:var(--ink); background:var(--white); }
-.headline{ font-family:'Inter',sans-serif; font-weight:900; letter-spacing:-0.01em; }
-.fluid{ width:100%; max-width:1220px; margin-inline:auto; padding-inline:clamp(1.25rem,4vw,3rem); }
-.kicker{ font-size:0.78rem; font-weight:600; letter-spacing:0.03em; }
-.btn-fill{
-  display:inline-flex; align-items:center; justify-content:center;
-  border-radius:999px; padding:0.9rem 2rem; font-weight:600; font-size:0.92rem;
-  border:2px solid var(--red); background:var(--red); color:#fff;
-  transition:background-color .25s ease, border-color .25s ease; white-space:nowrap;
-}
-.btn-fill:hover{ background:var(--red-dark); border-color:var(--red-dark); }
-.btn-ghost{
-  display:inline-flex; align-items:center; justify-content:center;
-  border-radius:999px; padding:0.9rem 2rem; font-weight:600; font-size:0.92rem;
-  border:2px solid var(--forest); background:transparent; color:var(--forest);
-  transition:background-color .25s ease; white-space:nowrap;
-}
-.btn-ghost:hover{ background:rgba(22,48,31,0.08); }
-.nav-link{ position:relative; padding-bottom:3px; font-weight:500; font-size:0.92rem; }
-.nav-link::after{ content:''; position:absolute; left:0; bottom:0; height:2px; width:0; background:var(--red); transition:width .25s ease; }
-.nav-link:hover::after, .nav-link.active::after{ width:100%; }
-#mobile-menu{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
-#mobile-menu.open{ max-height:420px; }
-.note-tile{
-  background:#fff; border:1px solid var(--line); border-radius:0.15rem; padding:1.5rem 1.25rem 1.25rem;
-  box-shadow:3px 4px 10px rgba(22,48,31,0.09); position:relative; cursor:pointer;
-  transition:transform .2s ease, box-shadow .2s ease;
-}
-.note-tile.tilt-l{ transform:rotate(-1.6deg); }
-.note-tile.tilt-r{ transform:rotate(1.4deg); }
-.note-tile.tilt-l:hover{ transform:rotate(-1.6deg) translateY(-5px); box-shadow:5px 9px 16px rgba(22,48,31,0.16); }
-.note-tile.tilt-r:hover{ transform:rotate(1.4deg) translateY(-5px); box-shadow:5px 9px 16px rgba(22,48,31,0.16); }
-.note-pin{ width:11px; height:11px; border-radius:50%; background:var(--red); position:absolute; top:-5px; left:50%; transform:translateX(-50%); box-shadow:0 2px 3px rgba(0,0,0,0.25); }
-.note-date{ font-weight:800; font-size:1.6rem; color:var(--red); line-height:1; letter-spacing:-0.01em; }
-
-#event-modal{ position:fixed; inset:0; z-index:200; display:none; align-items:center; justify-content:center; padding:1.25rem; background:rgba(22,48,31,0.55); }
-#event-modal.open{ display:flex; }
-.modal-card{ position:relative; width:100%; max-width:420px; background:#fff; border:3px solid var(--red); border-radius:0.6rem; padding:2.1rem 1.9rem 1.6rem; }
-.modal-close{ position:absolute; top:0.9rem; right:0.9rem; color:var(--forest-soft); background:none; border:none; cursor:pointer; padding:0.25rem; line-height:0; }
-.modal-close:hover{ color:var(--red); }
-.modal-arrow-wrap{ position:relative; width:56px; height:15px; margin:1.4rem auto 0; }
-.modal-arrow-wrap img{ position:absolute; top:50%; left:50%; height:56px; width:auto; transform:translate(-50%,-50%) rotate(90deg); }
-</style>
+<link rel="stylesheet" href="../assets/tailwind.css">
+<link rel="stylesheet" href="../assets/site.css">
 </head>
 <body class="w-full" data-page="events">
 
 <header class="fixed top-0 left-0 right-0 z-50" style="background:rgba(255,255,255,0.94); backdrop-filter:blur(6px); border-bottom:2px solid var(--forest);">
   <div class="fluid flex items-center justify-between py-3">
     <a href="../" class="flex items-center gap-3 shrink-0">
-      <img src="../assets/logo.png" alt="Achewon Netopalis emblem" class="shrink-0" style="height:42px; width:auto; object-fit:contain;">
+      <img src="../assets/logo.png" alt="Achewon Netopalis emblem" width="240" height="239" class="shrink-0" style="height:42px; width:auto; object-fit:contain;">
       <span class="font-bold text-lg leading-tight" style="color:var(--forest);">Achewon Netopalis</span>
     </a>
     <nav class="hidden md:flex items-center gap-7" style="color:var(--forest);">
@@ -96,6 +44,7 @@ body{ font-family:'Inter',sans-serif; color:var(--ink); background:var(--white);
   </div>
 </header>
 
+<main>
 <section class="w-full pt-32 pb-14" style="background:var(--bone); border-bottom:1px solid var(--line);">
   <div class="fluid">
     <p class="kicker mb-3" style="color:var(--red);">The Calendar</p>
@@ -110,7 +59,7 @@ body{ font-family:'Inter',sans-serif; color:var(--ink); background:var(--white);
 
     <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-14">
       <p class="text-sm" style="color:#7d765c;">Showing the next 6 upcoming events. For the complete schedule:</p>
-      <a href="javascript:void(0)" onclick="window.open(GOOGLE_CALENDAR_URL, '_blank')" class="btn-ghost shrink-0">View full Google Calendar</a>
+      <a href="https://calendar.google.com/calendar/u/0?cid=YW5ldG9wYWxpc2xvZGdlQGdtYWlsLmNvbQ" target="_blank" rel="noopener" class="btn-ghost shrink-0">View full Google Calendar</a>
     </div>
   </div>
 </section>
@@ -122,7 +71,7 @@ body{ font-family:'Inter',sans-serif; color:var(--ink); background:var(--white);
     <h2 class="headline mb-10" style="font-size:clamp(1.8rem,3.2vw,2.4rem); color:var(--forest);">Section Events</h2>
 
     <div class="flex items-center gap-5 mb-10">
-      <img src="../assets/SectionE18.png" alt="Section E18" class="shrink-0" style="width:64px; height:64px; object-fit:contain;">
+      <img src="../assets/SectionE18.png" alt="Section E18" width="160" height="160" class="shrink-0" style="width:64px; height:64px; object-fit:contain;">
       <p class="leading-relaxed" style="color:#544f3d;">Achewon Netopalis is part of Section E18, a group of lodges across our region that come together twice a year. Both events are open to any Arrowman who wants to go.</p>
     </div>
 
@@ -147,16 +96,17 @@ body{ font-family:'Inter',sans-serif; color:var(--ink); background:var(--white);
     <button class="modal-close" onclick="closeEventModal()" aria-label="Close">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
-    <p id="modal-date" class="kicker mb-2" style="color:var(--red);"></p>
-    <h3 id="modal-title" class="font-bold" style="font-size:1.3rem; color:var(--forest);"></h3>
-    <p id="modal-location" class="text-sm mt-1 mb-4" style="color:#7d765c;"></p>
-    <p id="modal-desc" class="text-sm leading-relaxed" style="color:#544f3d;"></p>
-    <a id="modal-link" href="#" target="_blank" rel="noopener" class="btn-fill !py-2 !px-5 !text-sm mt-4" hidden>Register</a>
+    <p id="modal-date" class="kicker mb-3" style="color:var(--red);"></p>
+    <h3 id="modal-title" class="font-bold" style="font-size:1.7rem; color:var(--forest);"></h3>
+    <p id="modal-location" class="mt-2 mb-5" style="font-size:1rem; color:#7d765c;"></p>
+    <p id="modal-desc" class="leading-relaxed" style="font-size:1.05rem; color:#544f3d;"></p>
+    <a id="modal-link" href="#" target="_blank" rel="noopener" class="btn-fill !py-2.5 !px-6 mt-5" hidden>Register</a>
     <div class="modal-arrow-wrap">
-      <img src="../assets/oaarrow.png" alt="">
+      <img src="../assets/oaarrow.png" alt="" width="99" height="524">
     </div>
   </div>
 </div>
+</main>
 
 <footer class="w-full pt-16 pb-10" style="background:var(--bone); border-top:2px solid var(--forest);">
   <div class="fluid grid sm:grid-cols-2 gap-10 text-sm mb-12" style="color:#544f3d;">
@@ -170,7 +120,7 @@ body{ font-family:'Inter',sans-serif; color:var(--ink); background:var(--white);
     </div>
   </div>
   <div class="fluid flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t" style="border-color:var(--line);">
-    <p class="text-xs" style="color:#a89d7c;">&copy; 2026 Achewon Netopalis, Order of the Arrow. WWW.</p>
+    <p class="text-xs" style="color:#544f3d;">&copy; 2026 Achewon Netopalis, Order of the Arrow. WWW.</p>
     <div class="flex items-center gap-5">
       <a href="https://www.instagram.com/achewonnetopalis/" target="_blank" rel="noopener" aria-label="Instagram" style="color:var(--forest-soft);" onmouseover="this.style.color='#c8102e'" onmouseout="this.style.color='#3c5a44'">
         <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 3.3.15 4.8 1.7 4.9 4.9.07 1.3.07 1.6.07 4.8s0 3.6-.07 4.8c-.15 3.2-1.7 4.8-4.9 4.9-1.3.07-1.6.07-4.9.07s-3.6 0-4.9-.07c-3.2-.15-4.8-1.7-4.9-4.9C2 15.6 2 15.3 2 12s0-3.6.07-4.9c.15-3.2 1.7-4.8 4.9-4.9C8.4 2.2 8.7 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.07-2.3.1-3.5 1.3-3.6 3.6C3.6 8.7 3.6 9 3.6 12s0 3.3.07 4.4c.1 2.3 1.3 3.5 3.6 3.6 1.2.07 1.6.07 4.7.07s3.5 0 4.7-.07c2.3-.1 3.5-1.3 3.6-3.6.07-1.1.07-1.4.07-4.4s0-3.3-.07-4.4c-.1-2.3-1.3-3.5-3.6-3.6-1.2-.07-1.6-.07-4.7-.07zm0 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 1.8a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4zm5.7-1.9a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z"/></svg>
